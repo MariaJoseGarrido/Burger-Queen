@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+body {
+    background-color: #343a40;
+    overflow: hidden;
+
+}
+
+.burgerHome { 
+   height: 400px;
+    margin-left: 35%;
+}
+
+.button {
+    background: rgb(152,14,14);
+    background: linear-gradient(311deg, rgba(152,14,14,1) 49%, rgba(244,17,0,1) 100%);
+    font-size: 25px;
+    font-family: 'Voltaire', sans-serif;
+    border-radius: 12px;
+    margin-left: 250px;
+
+}
+
+button:hover {
+    background:dimgrey;
+    color:white;
+}
+
+.date{
+    color: white;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .date{
+        font-size: 22px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .button {
+        margin-left: 150px;
+    
+    }
+
+    .burgerHome { 
+        height: 400px;
+         margin-left: 5%;
+     }
+
+     body{
+        overflow-x: hidden;
+     } 
+     
+}
+    /* Styles */

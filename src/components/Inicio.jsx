@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './button'
 import burgerlogo from '../img/burgerlogo.png'
+import "./inicio.css";
 
 export const Home = () => {
     let today = new Date();
@@ -10,15 +11,15 @@ export const Home = () => {
     return (
         <div>
             <header>
-            <div><p>{'Fecha:' + today.getDate() + '-' + allMonth + '-' + today.getFullYear()}</p></div>
+            <div className="date"><p>{'Fecha: ' + today.getDate() + '-' + allMonth + '-' + today.getFullYear()}</p></div>
             </header>
 
             <div className="logo">
-			<img alt="burgerlogo" src={burgerlogo} />
+			<img class="burgerHome" alt="burgerlogo" src={burgerlogo} />
             </div> 
                
-            <Button title='waiter'className="btn-blue"> Mesonero </Button>
-            <Button title='chef'className="btn-blue"> Chef </Button>
+            <Button title='Mesonera'className="btn-blue"> Mesonero </Button>
+            <Button title='Chef'className="btn-blue"> Chef </Button>
            
         </div>
     )
