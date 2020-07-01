@@ -1,28 +1,38 @@
-import React from 'react'
-import Button from './button'
-import burgerlogo from '../img/burgerlogo.png'
-import "./inicio.css";
+import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
+import Button from "../components/button";
+import burgerlogo from "../img/burgerlogo.png";
 
-export const Home = () => {
-    let today = new Date();
-    let month = today.getMonth() + 1;
-    let allMonth = (month<10) ? '0' + month:month;
-    
+
+class welcome extends Component {
+  render() {
     return (
-        <div>
-            <header>
-            <div className="date"><p>{'Fecha: ' + today.getDate() + '-' + allMonth + '-' + today.getFullYear()}</p></div>
-            </header>
+      <Fragment>
+        <div className="container-custom">
+          <div className="logo">
+			<img 
+			alt="burgerlogo" 
+			src={burgerlogo} />
+			
+            <h1 className="title-custom">¿Cuál es tu rol?</h1>
+            <div>
+              <div className='button-welcome'>
+			        <Link to="/Waiter">
+                <Button  title="Mesonero" />
+              </Link>
+			  </div>
+			  <div className='button-welcome'>
+              <Link to="/Chef">
+                <Button  title="Cocinero" />
+              </Link>
+			  </div>
+            </div>
 
-            <div className="logo">
-			<img class="burgerHome" alt="burgerlogo" src={burgerlogo} />
-            </div> 
-               
-            <Button title='Mesonera'className="btn-blue"> Mesonero </Button>
-            <Button title='Chef'className="btn-blue"> Chef </Button>
-           
+          </div>
         </div>
-    )
+      </Fragment>
+    );
+  }
 }
 
-export default Home;
+export default welcome;
