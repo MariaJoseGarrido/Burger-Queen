@@ -1,0 +1,18 @@
+.container-custom{
+	display: flex;
+	justify-content: center;
+	
+}
+.logo{
+	margin-top: 3rem;
+	text-align: center;
+}
+.title-custom{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.button-welcome{
+	display:inline-block;
+	margin:10px;
+	
+}
