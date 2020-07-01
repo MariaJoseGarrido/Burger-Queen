@@ -3,24 +3,23 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   NavLink
 } from "react-router-dom";
 import Home from './components/Inicio';
 import Waiter from "./components/Waiter";
 import Chef from "./components/Chef";
 
+
 function App () {
   return (
     <Router>
       <div className="container">
-        <h1>TODO MAL!</h1>
           <div className="btn-group">
             <NavLink to="/" className="btn btn-dark" activeClassName="active"> 
             Inicio 
             </NavLink>
             <NavLink to="/Waiter" className="btn btn-dark">  
-            Garzón
+            Mesonero
             </NavLink>
             <NavLink to="/Chef" className="btn btn-dark"> 
             Chef
@@ -39,7 +38,7 @@ function App () {
           </Route>
           <Route path="/">
             <Home/>
-            Esta es la página de inicio
+            
           </Route>
         </Switch>
       </div>
