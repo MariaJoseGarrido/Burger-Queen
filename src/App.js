@@ -14,18 +14,6 @@ function App () {
   return (
     <Router>
       <div className="container">
-          <div className="btn-group">
-            <NavLink to="/" className="btn btn-dark" activeClassName="active"> 
-            Inicio 
-            </NavLink>
-            <NavLink to="/Waiter" className="btn btn-dark">  
-            Mesonero
-            </NavLink>
-            <NavLink to="/Chef" className="btn btn-dark"> 
-            Chef
-            </NavLink>
-          </div>
-        <hr />
         <Switch>
           <Route path="/Waiter">
             <Waiter/>
