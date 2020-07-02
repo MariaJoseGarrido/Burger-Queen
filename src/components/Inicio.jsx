@@ -10,20 +10,25 @@ class welcome extends Component {
     return (
       <Fragment>
         <DateComponent />
-        <div className="container-custom">
-          <div className="logo">
-			      <img className="burgerHome" alt="burgerlogo" src={burgerlogo} />	
-            <h1 className="title-custom">¿Cuál es tu rol?</h1>
-            <div>
-              <div className='button-welcome'>
-                <Link to="/Waiter"><Button  title="Mesera" /></Link>
-              </div>
-			        <div className='button-welcome'>
-                <Link to="/Chef"><Button className="button" title="Chef" /></Link>
+          
+            <p className="title">BURGER</p>
+            <p className="subtitle">Queen</p>
+           
+
+          <div className="container-custom">
+            <div className="logo">
+              <img className="burgerHome" alt="burgerlogo" src={burgerlogo} />	
+              <h1 className="title-custom">¿Cuál es tu rol?</h1>
+              <div>
+                <div className='button-welcome'>
+                  <Link to="/Waiter"><Button  title="Mesera" /></Link>
+                </div>
+                <div className='button-welcome'>
+                  <Link to="/Chef"><Button className="button" title="Chef" /></Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </Fragment>
     );
   }
