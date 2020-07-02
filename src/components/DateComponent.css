@@ -4,5 +4,7 @@
     font-family: 'Voltaire', sans-serif;
     font-size: 22px;
     display: flex;
-    justify-content: flex-end;
+    justify-items: end;
+    color: black;
+
 }
