@@ -3,8 +3,6 @@ import "../components/DateComponent.css";
 
 class DateComponent extends React.Component{
     render() {
-
-
       let today = new Date();
       let hour = today.getHours();
       let  min  = today.getMinutes();
@@ -22,7 +20,6 @@ class DateComponent extends React.Component{
           { day + '/' + month + '/' + year } 
          
         </div>
-
       )
     }
   }
