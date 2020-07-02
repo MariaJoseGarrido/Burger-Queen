@@ -2,28 +2,37 @@
 
 body {
     background-color: #343a40;
-    overflow: hidden;
 
 }
 
 .burgerHome { 
    height: 400px;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .button {
+    height: 3em;
+    width: 8em;
     background: rgb(152,14,14);
     background: linear-gradient(311deg, rgba(152,14,14,1) 49%, rgba(244,17,0,1) 100%);
     font-size: 25px;
     font-family: 'Voltaire', sans-serif;
     border-radius: 12px;
-    margin-left: 250px;
+    margin-left: 200px;
+    color: #fbf5f3;
+    font-weight: bold;
+
 
 }
 
 button:hover {
     background:dimgrey;
     color:white;
+}
+
+.button-welcome {
+    display: flex;
+    align-items: row;
 }
 
 .date{
@@ -33,6 +42,15 @@ button:hover {
     display: flex;
     justify-content: flex-end;
 }
+
+.title-custom {
+    color:white;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 30px;
+    margin-left: 39%;
+}
+    
+
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
