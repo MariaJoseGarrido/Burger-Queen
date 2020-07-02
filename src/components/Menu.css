@@ -1,0 +1,25 @@
+.col {
+    width: 100px;
+    height: 260px;
+    background: black;
+    opacity: 50%;
+    color:white;
+    margin:5px;
+    margin-top: 20px;
+    z-index: 1;
+
+}
+
+
+.jamonqueso {
+    position: absolute;
+    width: 300px;
+  
+}
+
+p{
+    font-family: 'Voltaire', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
