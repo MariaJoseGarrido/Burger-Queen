@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
 body {
-    background-color: whitesmoke;
+    background-color: black;
 
 }
 
@@ -13,8 +14,7 @@ body {
 .button {
     height: 3em;
     width: 8em;
-    background: rgb(152,14,14);
-    background: linear-gradient(311deg, rgba(152,14,14,1) 49%, rgba(244,17,0,1) 100%);
+    background:#615B4E;
     font-size: 25px;
     font-family: 'Voltaire', sans-serif;
     border-radius: 12px;
@@ -43,6 +43,24 @@ button:hover {
     margin-left: 39%;
 }
     
+.title{
+    font-size: 80px !important;
+    color: white;
+}
+
+.subtitle{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 50px;
+    color: #d38f22;
+}
+
+.line {
+    height: 10px;
+    width: 100px;
+    color:#d38f22;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* iPads (portrait) ----------- */
