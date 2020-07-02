@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import backButton from "../img/backButton.png";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Inicio from "../components/Inicio";
