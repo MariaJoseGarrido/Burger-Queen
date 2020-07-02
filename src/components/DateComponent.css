@@ -1,5 +1,8 @@
+
 .DateComponent{
+    color: black;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 22px;
     display: flex;
-    justify-items: end;
-    color: #fbf5f3;
+    justify-content: flex-end;
 }

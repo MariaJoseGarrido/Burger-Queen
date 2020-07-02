@@ -35,13 +35,6 @@ button:hover {
     align-items: row;
 }
 
-.date{
-    color: white;
-    font-family: 'Voltaire', sans-serif;
-    font-size: 22px;
-    display: flex;
-    justify-content: flex-end;
-}
 
 .title-custom {
     color:white;

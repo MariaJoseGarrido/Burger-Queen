@@ -2,7 +2,7 @@
     width: 100px;
     height: 260px;
     background: black;
-    opacity: 50%;
+    opacity: 70%;
     color:white;
     margin:5px;
     margin-top: 20px;
@@ -11,15 +11,27 @@
 }
 
 
-.jamonqueso {
+.jamonqueso, .croissant, .americano, .latte, .muffin, .jugo, .simple, 
+.doble, .cesar, .wrap, .cerveza, .nachos, .limonada, .aritos, .soda,
+.papas, .nuggets {
     position: absolute;
     width: 300px;
   
 }
+
 
 p{
     font-family: 'Voltaire', sans-serif;
     font-size: 25px;
     display: flex;
     justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 30px; 
 }
