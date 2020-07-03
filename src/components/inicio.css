@@ -3,17 +3,16 @@
 
 body {
     background-color: black;
-
 }
 
 .burgerHome { 
    height: 400px;
-    margin-left: 30%;
+    margin-left: 28%;
 }
 
 .button {
-    height: 3em;
-    width: 8em;
+    height: 2em;
+    width: 6em;
     background:#615B4E;
     font-size: 25px;
     font-family: 'Voltaire', sans-serif;
@@ -21,8 +20,6 @@ body {
     margin-left: 200px;
     color: #fbf5f3;
     font-weight: bold;
-
-
 }
 
 button:hover {
@@ -32,7 +29,7 @@ button:hover {
 
 .button-welcome {
     display: flex;
-    align-items: row;
+    justify-content: space-around;
 }
 
 
@@ -54,12 +51,9 @@ button:hover {
     color: #d38f22;
 }
 
-.line {
-    height: 10px;
-    width: 100px;
-    color:#d38f22;
-    display: flex;
-    justify-content: center;
+.slogan {
+    font-size: 30px;
+    color:white;
 }
 
 

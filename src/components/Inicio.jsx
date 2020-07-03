@@ -13,6 +13,7 @@ class welcome extends Component {
           
             <p className="title">BURGER</p>
             <p className="subtitle">Queen</p>
+            <p className="slogan">"we make burgers with love"</p>
            
 
           <div className="container-custom">
