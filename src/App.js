@@ -16,12 +16,10 @@ function App () {
         <Switch>
           <Route path="/Waiter">
             <Waiter/>
-          
-            Esta es la página de meseros
+        
           </Route>
           <Route path="/Chef">
             <Chef/>
-            Esta es la página de chef
           </Route>
           <Route path="/">
             <Home/>

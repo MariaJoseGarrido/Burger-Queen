@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../components/Menu.css"
 import simple from "../img/almuerzo/simple.jpeg";
 import doble from "../img/almuerzo/doble.jpeg";
-import cesar from "../img/almuerzo/cesar.jpeg"
+import cesar from "../img/almuerzo/cesar.jpg"
 import limonada from "../img/almuerzo/limonada.jpeg"
 import wrap from "../img/almuerzo/wrap.jpeg"
 import jugo from "../img/jugo.jpeg"
@@ -51,7 +51,7 @@ class Menualmuerzo extends Component {
                         alt="aritos" 
                         src={aritos} /></div>    
                     <div className="w-100"></div>
-                    <div className="col"><p>Cesar Shrimp Bowl</p>
+                    <div className="col"><p>Caesar Shrimp Bowl</p>
                     <img className="cesar"
                         alt="cesar" 
                         src={cesar} /></div>

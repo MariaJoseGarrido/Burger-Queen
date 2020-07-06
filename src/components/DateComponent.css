@@ -1,10 +1,8 @@
 
 .DateComponent{
-    color: black;
+    color: white;
     font-family: 'Voltaire', sans-serif;
     font-size: 22px;
     display: flex;
-    justify-items: end;
-    color: white;
-
+    justify-content: flex-end;
 }

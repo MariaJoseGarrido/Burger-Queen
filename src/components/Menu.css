@@ -1,3 +1,5 @@
+
+
 .col {
     width: 100px;
     height: 260px;
@@ -7,16 +9,15 @@
     margin:5px;
     margin-top: 20px;
     z-index: 1;
-
 }
-
 
 .jamonqueso, .croissant, .americano, .latte, .muffin, .jugo, .simple, 
 .doble, .cesar, .wrap, .cerveza, .nachos, .limonada, .aritos, .soda,
 .papas, .nuggets {
-    position: absolute;
+    height: 200px;
     width: 300px;
-  
+    position: absolute;
+   
 }
 
 
