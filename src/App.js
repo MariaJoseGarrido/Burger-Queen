@@ -7,6 +7,7 @@ import {
 import Home from './components/Inicio';
 import Waiter from "./components/Waiter";
 import Chef from "./components/Chef";
+import Menudesayuno from "./components/Menudesayuno";
 
 
 function App () {
@@ -16,14 +17,18 @@ function App () {
         <Switch>
           <Route path="/Waiter">
             <Waiter/>
-        
+            </Route>
+
+          <Route path="/Menudesayuno>">
+            <Menudesayuno/>
           </Route>
+
           <Route path="/Chef">
             <Chef/>
           </Route>
+
           <Route path="/">
             <Home/>
-            
           </Route>
         </Switch>
       </div>

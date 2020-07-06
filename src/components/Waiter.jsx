@@ -8,7 +8,6 @@ import DateComponent from "./DateComponent";
 import "../components/inicio.css";
 import Button from "../components/button";
 import burgerlogo from "../img/burgerlogo.png";
-
 // import Cliente  from "../components/Cliente";
 
 
@@ -23,7 +22,7 @@ class horario extends Component {
               <h1 className="title-custom">Selecciona ...</h1>
               <div>
                 <div className='button-welcome'>
-                  <Link to="/Menudesayuno"><Button  title="Desayuno" onlcick={render Menudesayuno}/> <Menudesayuno /> </Link>
+                  <Link to="/Menudesayuno"><Button  title="Desayuno"/> </Link>
 									
                 </div>
                 <div className='button-welcome'>
