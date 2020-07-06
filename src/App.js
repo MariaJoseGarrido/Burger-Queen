@@ -7,6 +7,9 @@ import {
 import Home from './components/Inicio';
 import Waiter from "./components/Waiter";
 import Chef from "./components/Chef";
+import Menudesayuno from "./components/Menudesayuno";
+import Menualmuerzo from "./components/Menualmuerzo";
+
 
 
 function App () {
@@ -15,9 +18,16 @@ function App () {
       <div className="container">
         <Switch>
           <Route path="/Waiter">
-            <Waiter/>
-        
+            <Waiter/>    
           </Route>
+
+          <Route path="/Menudesayuno">
+            <Menudesayuno />
+          </Route>
+          <Route path="/Menualmuerzo">
+            <Menualmuerzo />
+          </Route>
+
           <Route path="/Chef">
             <Chef/>
           </Route>
