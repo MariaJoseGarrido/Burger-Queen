@@ -1,32 +1,26 @@
-import React, { Component, Fragment } from 'react';
-// import backButton from "../img/backButton.png";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Inicio from "../components/Inicio";
-import Menudesayuno from "../components/Menudesayuno";
-import Menualmuerzo from "../components/Menualmuerzo";
-import DateComponent from "./DateComponent";
-import "../components/inicio.css";
+import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/button";
-import burgerlogo from "../img/burgerlogo.png";
-// import Cliente  from "../components/Cliente";
+import waitress from "../img/waitress.jpeg";
+import "../components/waiter.css";
+import DateComponent from "./DateComponent"
 
-
-class horario extends Component {
+class welcomeWaiter extends Component {
   render() {
     return (
       <Fragment>
-        <DateComponent />           
+        <DateComponent />
+          
           <div className="container-custom">
             <div className="logo">
-              <img className="burgerHome" alt="burgerlogo" src={burgerlogo} />	
-              <h1 className="title-custom">Selecciona ...</h1>
+              <img className="waitress" alt="waitress" src={waitress} />	
+              <h1 className="title-custom">¿Qué servicio vas a prestar?</h1>
               <div>
                 <div className='button-welcome'>
-                  <Link to="/Menudesayuno"><Button  title="Desayuno"/> </Link>
-									
+                  <Link to="/Menudesayuno"><Button  title="Desayuno" /></Link>
                 </div>
                 <div className='button-welcome'>
-                  <Link to="/Menualmuerzo"><Button className="button" title="Almuerzo/Cena" /></Link>
+                  <Link to="/Menualmuerzo"><Button className="button" title="Almuerzo" /></Link>
                 </div>
               </div>
             </div>
@@ -36,41 +30,5 @@ class horario extends Component {
   }
 }
 
-export default horario;
+export default welcomeWaiter;
 
-// class Waiter extends Component {
-
-// 	backButton = () => { 
-// 		console.log('clicked back button')   
-// 		return(
-// 		<Router>
-// 		  <Route exact path="/">
-// 			  <Inicio />
-// 		  </Route>
-// 		</Router>
-// 		);
-	   
-// 	  };
-
-// 	render() {
-// 		return (
-// 			<div className="WaiterDiv">
-// 				<Link to="/">
-// 					<img
-// 						onClick={() => this.backButton()}
-// 						alt="backButton"
-// 						src={backButton}
-// 						className="backButton"
-// 					/>
-// 				</Link> 
-// 				<Cliente />  
-//                 <Menudesayuno />
-// 				<Menualmuerzo />
-// 			</div>
-
-// 		);
-// 	}
-// }
-
-
-// export default Waiter;
