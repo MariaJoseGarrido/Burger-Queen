@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Inicio from "../components/Inicio";
 import Menudesayuno from "../components/Menudesayuno";
 import Menualmuerzo from "../components/Menualmuerzo";
+import Cliente  from "../components/Cliente";
 
 class Waiter extends Component {
 
@@ -29,7 +30,8 @@ class Waiter extends Component {
 						src={backButton}
 						className="backButton"
 					/>
-				</Link>   
+				</Link> 
+				<Cliente />  
                 <Menudesayuno />
 				<Menualmuerzo />
 			</div>
