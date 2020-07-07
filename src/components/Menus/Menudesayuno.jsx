@@ -8,10 +8,34 @@ import muffin from "../../img/muffin.jpeg";
 import jugo from "../../img/jugo.jpeg";
 
 class Menudesayuno extends Component {
+    backButton = () => { 
+		console.log('clicked back button')   
+		return(
+		<Router>
+		  <Route exact path="/Waiter">
+			  <Waiter />
+		  </Route>
+		</Router>
+		);
+	   
+	  };
     render () {
         return (
             <React.Fragment>
-            <div className="container-sm">
+                  <div className="WaiterDiv">
+				<Link to="/Waiter">
+                    <img 
+                        onClick={() => this.backButton()}
+						alt="backButton"
+						src={backButton}
+						className="backButton"
+					/>
+                   
+				</Link> 
+				<Cliente />  
+                
+			</div>
+            <div class="container-sm">
                 <div className="title">
                     <div>Para Comer</div>
                     <div>Para Beber</div>

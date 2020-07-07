@@ -14,9 +14,33 @@ import soda from "../../img/almuerzo/soda.jpeg"
 import papas from "../../img/almuerzo/papas.jpeg"
 
 class Menualmuerzo extends Component {
+    backButton = () => { 
+		console.log('clicked back button')   
+		return(
+		<Router>
+		  <Route exact path="/Waiter">
+			  <Waiter />
+		  </Route>
+		</Router>
+		);
+	   
+	  };
     render () {
         return (
             <React.Fragment>
+                 <div className="WaiterDiv">
+				<Link to="/Waiter">
+                    <img 
+                        onClick={() => this.backButton()}
+						alt="backButton"
+						src={backButton}
+						className="backButton"
+					/>
+                   
+				</Link> 
+				<Cliente />  
+                
+			</div>
             <div class="container-sm">
                 <div className="title">
                     <div>Para Comer</div>
