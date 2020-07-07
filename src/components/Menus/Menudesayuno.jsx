@@ -48,7 +48,7 @@ class Menudesayuno extends Component {
             <h1 className='title-menu'>Para Comer</h1>
         </div>
         <div className="col-xl-12 col-md-6"> 
-            <p>Sándwich Jamón-Queso</p>                  
+        <p>Sándwich Jamón-Queso </p>          
             <div className="card-img">
                 <img className="jamonqueso d-flex"
                 alt="jamonqueso" 
