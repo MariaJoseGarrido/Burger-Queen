@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Rol/Cliente.css";
+import "./Cliente.css";
 
 class cliente extends Component {
   render() {
