@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import backButton from "../img/backButton.png";
 import "../components/Menu.css"
 import simple from "../img/almuerzo/simple.jpeg";
 import doble from "../img/almuerzo/doble.jpeg";
@@ -12,11 +14,38 @@ import nachos from "../img/almuerzo/nachos.jpeg"
 import aritos from "../img/almuerzo/aritos.jpg"
 import soda from "../img/almuerzo/soda.jpeg"
 import papas from "../img/almuerzo/papas.jpeg"
+import Cliente from "../components/Cliente";
+import Waiter from "../components/Waiter";
+import "../components/Cliente.css";
 
 class Menualmuerzo extends Component {
+    backButton = () => { 
+		console.log('clicked back button')   
+		return(
+		<Router>
+		  <Route exact path="/Waiter">
+			  <Waiter />
+		  </Route>
+		</Router>
+		);
+	   
+	  };
     render () {
         return (
             <React.Fragment>
+                 <div className="WaiterDiv">
+				<Link to="/Waiter">
+                    <img 
+                        onClick={() => this.backButton()}
+						alt="backButton"
+						src={backButton}
+						className="backButton"
+					/>
+                   
+				</Link> 
+				<Cliente />  
+                
+			</div>
             <div class="container-sm">
                 <div className="title">
                     <div>Para Comer</div>
