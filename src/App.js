@@ -5,10 +5,10 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Inicio';
-import Waiter from "./components/Waiter";
-import Chef from "./components/Chef";
-import Menudesayuno from "./components/Menudesayuno";
-import Menualmuerzo from "./components/Menualmuerzo";
+import Waiter from "./components/Rol/Waiter";
+import Chef from "./components/Rol/Chef";
+import Menudesayuno from "./components/Menus/Menudesayuno";
+import Menualmuerzo from "./components/Menus/Menualmuerzo";
 
 
 

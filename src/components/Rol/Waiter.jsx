@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import Button from "../components/button";
-import waitress from "../img/waitress.jpeg";
-import "../components/waiter.css";
-import DateComponent from "./DateComponent"
+import Button from "../../components/button";
+import waitress from "../../img/waitress.jpeg";
+import "../Rol/waiter.css"
+import DateComponent from "../DateComponent"
 
 class welcomeWaiter extends Component {
   render() {

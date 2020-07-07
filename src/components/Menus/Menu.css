@@ -1,4 +1,6 @@
-
+.container-sm {
+    background: whitesmoke;
+}
 
 .col {
     width: 100px;
@@ -16,7 +18,8 @@
 .papas, .nuggets {
     height: 200px;
     width: 300px;
-    position: absolute;
+    display: flex;
+    align-items: center;
    
 }
 

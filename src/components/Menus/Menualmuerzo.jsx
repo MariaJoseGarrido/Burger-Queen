@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import "../components/Menu.css"
-import simple from "../img/almuerzo/simple.jpeg";
-import doble from "../img/almuerzo/doble.jpeg";
-import cesar from "../img/almuerzo/cesar.jpg"
-import limonada from "../img/almuerzo/limonada.jpeg"
-import wrap from "../img/almuerzo/wrap.jpeg"
-import jugo from "../img/jugo.jpeg"
-import nuggets from "../img/almuerzo/nuggets.jpeg"
-import cerveza from "../img/almuerzo/cerveza.jpeg"
-import nachos from "../img/almuerzo/nachos.jpeg"
-import aritos from "../img/almuerzo/aritos.jpg"
-import soda from "../img/almuerzo/soda.jpeg"
-import papas from "../img/almuerzo/papas.jpeg"
+import "../Menus/Menu.css";
+import simple from "../../img/almuerzo/simple.jpeg";
+import doble from "../../img/almuerzo/doble.jpeg";
+import cesar from "../../img/almuerzo/cesar.jpg";
+import limonada from "../../img/almuerzo/limonada.jpeg";
+import wrap from "../../img/almuerzo/wrap.jpeg";
+import jugo from "../../img/jugo.jpeg";
+import nuggets from "../../img/almuerzo/nuggets.jpeg"
+import cerveza from "../../img/almuerzo/cerveza.jpeg"
+import nachos from "../../img/almuerzo/nachos.jpeg"
+import aritos from "../../img/almuerzo/aritos.jpg"
+import soda from "../../img/almuerzo/soda.jpeg"
+import papas from "../../img/almuerzo/papas.jpeg"
 
 class Menualmuerzo extends Component {
     render () {
