@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "../Menus/Menu.css";
+import "../Rol/Cliente.css"
 import simple from "../../img/almuerzo/simple.jpeg";
 import doble from "../../img/almuerzo/doble.jpeg";
 import cesar from "../../img/almuerzo/cesar.jpg";
@@ -12,6 +14,10 @@ import nachos from "../../img/almuerzo/nachos.jpeg"
 import aritos from "../../img/almuerzo/aritos.jpg"
 import soda from "../../img/almuerzo/soda.jpeg"
 import papas from "../../img/almuerzo/papas.jpeg"
+import Cliente from "../../components/Rol/Cliente"
+import Waiter from "../../components/Rol/Waiter"
+import backButton from "../../img/backButton.png"
+
 
 class Menualmuerzo extends Component {
     backButton = () => { 
