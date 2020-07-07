@@ -1,5 +1,5 @@
-.container-sm {
-    background: whitesmoke;
+body{
+    background: black;
 }
 
 .col {
@@ -13,14 +13,16 @@
     z-index: 1;
 }
 
+.back{
+    background-color: whitesmoke;
+    opacity: 80%; /* agregar color*/
+}
+
 .jamonqueso, .croissant, .americano, .latte, .muffin, .jugo, .simple, 
 .doble, .cesar, .wrap, .cerveza, .nachos, .limonada, .aritos, .soda,
 .papas, .nuggets {
     height: 200px;
     width: 300px;
-    display: flex;
-    align-items: center;
-   
 }
 
 
@@ -38,4 +40,24 @@ p{
     align-items: flex-start;
     font-family: 'Voltaire', sans-serif;
     font-size: 30px; 
+}
+.card-img{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.card-img img{
+    margin: 0 auto;
+}
+.row{
+    margin: 0;
+}
+.title-menu{
+    font-size: 85px;
+    color: black;
+}
+@media (max-width: 768px){
+    .title-menu{
+        font-size: 60px;
+    }
 }
