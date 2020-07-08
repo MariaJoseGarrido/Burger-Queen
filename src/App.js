@@ -9,7 +9,7 @@ import Waiter from "./components/Rol/Waiter";
 import Chef from "./components/Rol/Chef";
 import Menudesayuno from "./components/Menus/Menudesayuno";
 import Menualmuerzo from "./components/Menus/Menualmuerzo";
-
+import Formulario from "./components/Formulario"
 
 
 function App () {
@@ -31,6 +31,14 @@ function App () {
           <Route path="/Chef">
             <Chef/>
           </Route>
+
+          <Route path="/Formulario">
+            <Formulario />
+            Esta es la página de formulario
+          </Route>   
+
+
+
 
           <Route path="/">
             <Home/>

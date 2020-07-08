@@ -20,36 +20,17 @@
 
     <script type="module" src="app.js"></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
-
-      <!-- update the version number as needed -->
+    <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
-      <!-- include only the Firebase features as you need -->
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-    <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyCLgDJnX5mAN0ScMagU1xVAY4AnZ0lmatQ",
-      authDomain: "burger-queen-a8441.firebaseapp.com",
-      databaseURL: "https://burger-queen-a8441.firebaseio.com",
-      projectId: "burger-queen-a8441",
-      storageBucket: "burger-queen-a8441.appspot.com",
-      messagingSenderId: "857096254623",
-      appId: "1:857096254623:web:162e71df636d211da2deaa",
-      measurementId: "G-PKBPCWLX3H"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
 
-    </script>
-  </body>
+</body>
 
 </html>
