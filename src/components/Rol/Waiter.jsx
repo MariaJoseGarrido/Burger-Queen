@@ -1,14 +1,38 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Button from "../../components/button";
 import waitress from "../../img/waitress.jpeg";
 import "../Rol/waiter.css"
 import DateComponent from "../DateComponent"
+import backButton from "../../img/backButton.png"
+import Inicio from "../Inicio"
 
 class welcomeWaiter extends Component {
+  backButton = () => { 
+		console.log('clicked back button')   
+		return(
+		<Router>
+		  <Route exact path="/Waiter">
+			  <Inicio />
+		  </Route>
+		</Router>
+		);
+    }
   render() {
     return (
       <Fragment>
+        <div className="WaiterDiv">
+				<Link to="/inicio">
+                    <img 
+                        onClick={() => this.backButton()}
+						alt="backButton"
+						src={backButton}
+						className="backButton"
+					/>
+                   
+				</Link>
+                
+			</div>
         <DateComponent />
           
           <div className="container-custom">
