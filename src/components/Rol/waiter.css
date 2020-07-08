@@ -1,9 +1,17 @@
 .waitress {
-    width: 75%;
+    width: 70%;
     border-radius: 5px;
     display: inline;
-    margin-left: 100px;
+    margin-left: 170px;
 }
+
+.title-custom{
+    display: flex;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}    
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {

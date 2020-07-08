@@ -1,0 +1,18 @@
+.col-sm {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 400px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.fas {
+  color:black;
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+p{
+  margin-top: 10px;
+  text-decoration: underline black;  
+}
