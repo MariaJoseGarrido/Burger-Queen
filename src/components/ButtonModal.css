@@ -3,7 +3,18 @@
     height: 30px;
     width: 200px;
     margin-left: 5%;
-    justify-content: first baseline;
-    background-color: blue;
-    
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 3px;
+    background-color: whitesmoke;
+    border: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 20px;
+}
+
+.buttonModal:hover {
+    background-color: black;
+    color:white;
 }

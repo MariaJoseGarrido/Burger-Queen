@@ -49,7 +49,7 @@ class Menudesayuno extends Component {
                             <h1 className='title-menu'>Para Comer</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                        <ButtonModal className="botonModal"  title="Sandwich Jamon Queso" />         
+                        <ButtonModal className="botonModal"  title="Sandwich Jamón Queso" />         
                             <div className="card-img">
                                 <img className="jamonqueso d-flex"
                                 alt="jamonqueso" 
