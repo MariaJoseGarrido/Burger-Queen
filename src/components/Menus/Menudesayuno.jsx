@@ -11,7 +11,8 @@ import jugo from "../../img/jugo.jpeg";
 import Cliente from "../../components/Rol/Cliente"
 import Waiter from "../../components/Rol/Waiter"
 import backButton from "../../img/backButton.png"
-
+import ButtonModal from "../ButtonModal";
+import "../ButtonModal.css"
 
 class Menudesayuno extends Component {
     backButton = () => { 
@@ -48,7 +49,7 @@ class Menudesayuno extends Component {
                             <h1 className='title-menu'>Para Comer</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                        <p>Sándwich Jamón-Queso </p>          
+                        <ButtonModal className="botonModal"  title="Sandwich Jamon Queso" />         
                             <div className="card-img">
                                 <img className="jamonqueso d-flex"
                                 alt="jamonqueso" 
@@ -56,7 +57,7 @@ class Menudesayuno extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p> Croissant</p>
+                        <ButtonModal className="botonModal"  title="Croissant" />
                             <div className="card-img">
                                 <img className="Croissant d-flex"
                                     alt="croissant" 
@@ -64,7 +65,7 @@ class Menudesayuno extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Muffin</p>
+                        <ButtonModal className="botonModal"  title="Muffin" />
                             <div className="card-img">
                                 <img className="Muffin d-flex"
                                 alt="muffin" 
@@ -78,7 +79,7 @@ class Menudesayuno extends Component {
                             <h1 className='title-menu'>Para Beber</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                            <p>Café Americano</p>                  
+                        <ButtonModal className="botonModal"  title="Café Americano" />                  
                             <div className="card-img">
                                 <img className="Café Americano d-flex"
                                 alt="americano" 
@@ -86,7 +87,7 @@ class Menudesayuno extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Latte</p>
+                        <ButtonModal className="botonModal"  title="Latte" />
                             <div className="card-img">
                                 <img className="latte d-flex"
                                 alt="latte" 
@@ -94,7 +95,7 @@ class Menudesayuno extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Jugo de frutas natural</p>
+                        <ButtonModal className="botonModal"  title="Jugo Natural" />
                             <div className="card-img">
                                 <img className="jugo d-flex"
                                 alt="jugo" 

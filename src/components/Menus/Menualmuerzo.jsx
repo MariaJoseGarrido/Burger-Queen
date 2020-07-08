@@ -16,6 +16,8 @@ import nachos from "../../img/almuerzo/nachos.jpeg";
 import aritos from "../../img/almuerzo/aritos.jpg";
 import soda from "../../img/almuerzo/soda.jpeg";
 import papas from "../../img/almuerzo/papas.jpeg";
+import ButtonModal from "../ButtonModal";
+import "../ButtonModal.css"
 
 class Menualmuerzo extends Component {
     backButton = () => { 
@@ -52,7 +54,7 @@ class Menualmuerzo extends Component {
                             <h1 className='title-menu'>Para Comer</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                            <p>Burger Princess</p>                  
+                        <ButtonModal className="botonModal"  title="Burger Princess" />                  
                             <div className="card-img">
                                 <img className="simple d-flex"
                                 alt="simple" 
@@ -60,7 +62,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p> Burger Queen</p>
+                        <ButtonModal className="botonModal"  title="Burger Queen" />
                             <div className="card-img">
                                 <img className="doble d-flex"
                                     alt="doble" 
@@ -68,7 +70,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Caesar Shrimp Bowl</p>
+                        <ButtonModal className="botonModal"  title="Caesar Shrimp Bowl" />
                             <div className="card-img">
                                 <img className="cesar d-flex"
                                 alt="cesar" 
@@ -76,7 +78,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Wrap</p>
+                        <ButtonModal className="botonModal"  title="Wrap" />
                             <div className="card-img">
                                 <img className="wrap d-flex"
                                 alt="wrap" 
@@ -90,7 +92,7 @@ class Menualmuerzo extends Component {
                             <h1 className='title-menu'>Para Beber</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                            <p>Cerveza</p>                  
+                        <ButtonModal className="botonModal"  title="Cerveza" />                  
                             <div className="card-img">
                                 <img className="cerveza d-flex"
                                 alt="cerveza" 
@@ -98,7 +100,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Limonada</p>
+                        <ButtonModal className="botonModal"  title="Limonada" />
                             <div className="card-img">
                                 <img className="limonada d-flex"
                                 alt="limonada" 
@@ -106,7 +108,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Bebida</p>
+                        <ButtonModal className="botonModal"  title="Bebida" />
                             <div className="card-img">
                                 <img className="soda d-flex"
                                 alt="soda" 
@@ -114,7 +116,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Jugo de frutas natural</p>
+                        <ButtonModal className="botonModal"  title="Jugo Natural" />
                             <div className="card-img">
                                 <img className="jugo d-flex"
                                 alt="jugo" 
@@ -128,7 +130,7 @@ class Menualmuerzo extends Component {
                             <h1 className='title-menu'>Para Acompañar</h1>
                         </div>
                         <div className="col-xl-12 col-md-6"> 
-                            <p>Nachos</p>                  
+                        <ButtonModal className="botonModal"  title="Nachos" />                 
                             <div className="card-img">
                                 <img className="nachos d-flex"
                                 alt="nachos" 
@@ -136,7 +138,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div> 
                         <div className="col-xl-12 col-md-6">
-                            <p>Aritos de cebolla</p>
+                        <ButtonModal className="botonModal"  title="Aros de Cebolla" />
                             <div className="card-img">
                                 <img className="aritos d-flex"
                                 alt="aritos" 
@@ -144,7 +146,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Papas fritas</p>
+                        <ButtonModal className="botonModal"  title="Papas Fritas" />
                             <div className="card-img">
                                 <img className="papas d-flex"
                                 alt="papas" 
@@ -152,7 +154,7 @@ class Menualmuerzo extends Component {
                             </div>
                         </div>
                         <div className="col-xl-12 col-md-6">
-                            <p>Nuggets</p>
+                        <ButtonModal className="botonModal"  title="Nuggets" />
                             <div className="card-img">
                                 <img className="nuggets d-flex"
                                 alt="nuggets" 

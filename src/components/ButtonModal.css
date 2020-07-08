@@ -1,0 +1,9 @@
+.buttonModal {
+    margin-top: 2em;
+    height: 30px;
+    width: 200px;
+    margin-left: 5%;
+    justify-content: first baseline;
+    background-color: blue;
+    
+}
