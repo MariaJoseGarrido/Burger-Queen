@@ -6,6 +6,7 @@ import "../Rol/waiter.css"
 import DateComponent from "../DateComponent"
 import backButton from "../../img/backButton.png"
 import Inicio from "../Inicio"
+import Menu from "../../components/NuevoMenu"
 
 class welcomeWaiter extends Component {
   backButton = () => { 
@@ -48,6 +49,10 @@ class welcomeWaiter extends Component {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div> 
+            <Menu />
           </div>
       </Fragment>
     );
