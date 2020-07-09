@@ -1,157 +1,120 @@
-[
-    {
-      "id": "b01",
+{
+  "desayunos": [
+  {
       "name": "Café Americano",
       "price": 1500,
-      "type": "Breakfast"
+      "img" : "https://i.ibb.co/Qdj1tCp/cafe-americano.jpg"
     },
     {
-      "id": "b02",
       "name": "Latte",
       "price": 1800,
-      "type": "Breakfast"
+      "img" :   "FOTO"
     },
     {
-      "id": "b03",
       "name": "Sandwich jamón-queso",
       "price": 2000,
-      "type": "Breakfast"
+      "img" : "Foto"
     },
     {
-      "id": "b04",
       "name": "Jugo de frutas natural",
       "price": 1800,
-      "type": "Breakfast"
+      "img" :   "FOTO"
     },
     {
-        "id": "b05",
-        "name": "Muffin",
-        "price": 1000,
-        "type": "Breakfast"
-      },
-      {
-        "id": "b06",
-        "name": "Croissant",
-        "price": 1000,
-        "type": "Breakfast"
-      },
+      "name": "Muffin",
+      "price": 1000,
+      "img" :   "FOTO"
+    },
     {
-      "id": "d01",
+     "name": "Croissant",
+      "price": 1000,
+      "img" :   "FOTO"
+    }
+  ],
+  "almuerzos": [
+    {
       "name": "Burger Princess",
       "price": 3000,
-      "type": "dinner",
-      "extras": [
-        {
-          "id": "e00",
-          "name": "Huevo",
-          "price": 500
-        }, 
-        {
-          "id": "e01",
-          "name": "Queso",
-          "price": 500
-        }
-      ],
-      "options": [
-        {
-          "id": "t00",
-          "name": "Pollo"
-        },
-        {
-          "id": "t01",
-          "name": "Carne"
-        },
-        {
-          "id": "t01", 
-          "name": "Vegetariana"
-        }
-      ]
+      "img" :   "FOTO"
     },
     {
-      "id": "d02",
       "name": "Burger Queen",
       "price": 3500,
-      "type": "dinner",
-      "extras": [
-        {
-          "id": "e00",
-          "name": "Huevo",
-          "price": 500
-        }, 
-        {
-          "id": "e01",
-          "name": "Queso",
-          "price": 500
-        }
-      ],
-      "options": [
-        {
-          "id": "t00",
-          "name": "Pollo"
-        },
-        {
-          "id": "t01",
-          "name": "Carne"
-        },
-        {
-          "id": "t01",
-          "name": "Vegetariana"
-        }
-      ]
+      "img" :   "FOTO"
     },
     {
-        "id": "d03",
-        "name": "Caesar Shrimp Bowl",
-        "price": 3500,
-        "type": "dinner"
-      },
-      {
-        "id": "d04",
-        "name": "Wrap",
-        "price": 3000,
-        "type": "dinner"
-      },
-    {
-      "id": "d05",
-      "name": "Papas fritas",
-      "price": 1000,
-      "type": "dinner"
+      "name": "Caesar Shrimp Bowl",
+      "price": 3500,
+      "img" :   "FOTO"
     },
     {
-      "id": "d06",
-      "name": "Aros de cebolla",
-      "price": 1000,
-      "type": "dinner"
+      "name": "Wrap",
+      "price": 3500,
+      "img" :   "FOTO"
     },
     {
-        "id": "d07",
-        "name": "Nachos",
-        "price": 1000,
-        "type": "dinner"
-        
-      },
-      {
-        "id": "d08",
-        "name": "Nuggets",
-        "price": 1000,
-        "type": "dinner"
-      },
-    {
-      "id": "d09",
       "name": "Soda",
       "price": 1000,
-      "type": "dinner"
+      "img" :   "FOTO"
     },
     {
-      "id": "d010",
       "name": "Cerveza",
       "price": 1500,
-      "type": "dinner"
+      "img" :   "FOTO"
     },
     {
-      "id": "d011",
       "name": "Limonada",
       "price": 1000,
-      "type": "dinner"
-    }
+      "img" :   "FOTO"
+    } 
+  ],
+  "extra": [
+    {
+       "name": "Huevo",
+       "price": 500,
+       "img" :   "FOTO"
+    },
+    {
+     "name": "Queso",
+     "price": 500,
+     "img" :   "FOTO"
+    },
+    {
+     "name": "Pollo",
+     "price": 1000,
+     "img" :   "FOTO"
+    },
+    {
+      "name": "Carne",
+      "price": 1000,
+      "img" :   "FOTO"
+     },
+     {
+      "name": "Vegetariana",
+      "price": 1000,
+      "img" :   "FOTO"
+     }
+  ],
+  "acompañantes": [
+    {
+       "name": "Nachos",
+       "price": 1000,
+       "img" :   "FOTO"
+    },
+    {
+     "name": "Aros de cebolla",
+     "price": 1000,
+     "img" :   "FOTO"
+    },
+    {
+     "name": "Papas fritas",
+     "price": 1000,
+     "img" :   "FOTO"
+    },
+    {
+      "name": "Nuggets",
+      "price": 1000,
+      "img" :   "FOTO"
+     }
   ]
+}

@@ -1,0 +1,39 @@
+.Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  
+
+  .newMenu-Data__type {
+    display: inline-block;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Voltaire', sans-serif;
+ 
+  }
+ 
+  .newMenu-Data__type:hover {
+    background-color:black;
+  }
+  
+  
+
+  .newMenu-Data__item {
+    display: grid;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #fbf5f3;
+    font-family: 'Voltaire', sans-serif;
+    cursor: pointer;
+
+  }
+  
+  .newMenu-Data__item span {
+    display: block;
+  }
+  
