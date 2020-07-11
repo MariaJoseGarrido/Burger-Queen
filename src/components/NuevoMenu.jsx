@@ -31,18 +31,24 @@ export default function Menu() {
 					<div className="row">
 						<div className="col-sm">
 							<p> <i class="fas fa-concierge-bell"></i>Pedidos</p>
+            <div>
+              {selectedItems && selectedItems.map(item => (
+                <div>
+                  {item.name} <span>${item.price}</span>
+                </div>
+              ))}
+              <div >
+                Total{" "}
+                <span>
+                $ {selectedItems.reduce((acc, curr) => acc + curr.price, 0).toFixed(2)}
+                </span>
+              </div>
+            </div>
 						</div>
-
 					</div>
 				</div>
-
-
-
-
-
     </div>
   );
 }
 
 
-// <img src ={item.img} />
