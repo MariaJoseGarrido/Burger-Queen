@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./stylesMenu.css";
 import Data from "./Data";
 
+
 export default function Menu() {
   const [DataType, setDataType] = useState("desayunos");
   const [selectedItems, setSelectedItems] = useState([]);
@@ -44,6 +45,9 @@ export default function Menu() {
                 </span>
               </div>
             </div>
+              {selectedItems.length > 0 && (
+                <button> Enviar a Cocina </button>
+              )}
 						</div>
 					</div>
 				</div>
