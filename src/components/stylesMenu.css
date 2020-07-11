@@ -37,3 +37,21 @@
     display: block;
   }
   
+  .img-menu{
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  /* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .date{
+      font-size: 22px;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  
+
+   
+   
+}

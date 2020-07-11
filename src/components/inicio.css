@@ -44,7 +44,7 @@ button:hover {
     color: white;
 }
 
-.subtitle{
+.subtitle {
     font-family: 'Pattaya', sans-serif;
     font-size: 50px;
     color: #d38f22;
@@ -58,7 +58,7 @@ button:hover {
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .date{
+    .date {
         font-size: 22px;
         display: flex;
         justify-content: flex-end;
@@ -74,9 +74,15 @@ button:hover {
          margin-left: 10%;
      }
 
-     body{
+     body {
         overflow-x: hidden;
      } 
      
+     .title-custom {
+        font-size: 30px;
+        margin-left: 50%;
+        margin-bottom: 10px;
+    }
+
 }
     /* Styles */

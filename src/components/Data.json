@@ -3,69 +3,69 @@
   {
       "name": "Café Americano",
       "price": 1500,
-      "img" : "https://i.ibb.co/Qdj1tCp/cafe-americano.jpg"
+      "img" : "https://i.imgur.com/UMDyjdi.jpg"
     },
     {
       "name": "Latte",
       "price": 1800,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/NoMUTEd.jpg"
     },
     {
       "name": "Sandwich jamón-queso",
       "price": 2000,
-      "img" : "Foto"
+      "img" : "https://i.imgur.com/6KS1SeC.jpg"
     },
     {
       "name": "Jugo de frutas natural",
       "price": 1800,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/jku7QE5.jpg"
     },
     {
       "name": "Muffin",
       "price": 1000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/YZwLGWh.jpg"
     },
     {
      "name": "Croissant",
       "price": 1000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/bvdyMwB.jpg"
     }
   ],
   "almuerzos": [
     {
       "name": "Burger Princess",
       "price": 3000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/If6OJ1Z.jpg"
     },
     {
       "name": "Burger Queen",
       "price": 3500,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/CpYYRJp.jpg"
     },
     {
       "name": "Caesar Shrimp Bowl",
       "price": 3500,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/7z6jrof.jpg"
     },
     {
       "name": "Wrap",
       "price": 3500,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/kPvleTx.jpg"
     },
     {
       "name": "Soda",
       "price": 1000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/PhTwBlU.jpg"
     },
     {
       "name": "Cerveza",
       "price": 1500,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/LJIQvdc.jpg"
     },
     {
       "name": "Limonada",
       "price": 1000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/SfWUWab.jpg"
     } 
   ],
   "extra": [
@@ -85,12 +85,12 @@
      "img" :   "FOTO"
     },
     {
-      "name": "Carne",
+      "name": "Res",
       "price": 1000,
       "img" :   "FOTO"
      },
      {
-      "name": "Vegetariana",
+      "name": "Hamburguesa de Quínoa",
       "price": 1000,
       "img" :   "FOTO"
      }
@@ -99,22 +99,22 @@
     {
        "name": "Nachos",
        "price": 1000,
-       "img" :   "FOTO"
+       "img" :   "https://i.imgur.com/4UxQLZv.jpg"
     },
     {
      "name": "Aros de cebolla",
      "price": 1000,
-     "img" :   "FOTO"
+     "img" :   "https://i.imgur.com/7CCqu3r.jpg"
     },
     {
      "name": "Papas fritas",
      "price": 1000,
-     "img" :   "FOTO"
+     "img" :   "https://i.imgur.com/ytGzw9E.jpg"
     },
     {
       "name": "Nuggets",
       "price": 1000,
-      "img" :   "FOTO"
+      "img" :   "https://i.imgur.com/KIOVOQd.jpg"
      }
   ]
 }

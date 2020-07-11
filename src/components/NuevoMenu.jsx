@@ -23,7 +23,7 @@ export default function Menu() {
         <br />
         {Data[DataType].map(item => (
           <div className="newMenu-Data__item" onClick={() => handleItemClick(item)}>
-            {item.name} <span>${item.price}</span> <img alt="" src ={item.img} />
+            {item.name} <span>${item.price}</span> <img className="img-menu" alt="" src ={item.img} />
           </div>
         ))}
       </div>

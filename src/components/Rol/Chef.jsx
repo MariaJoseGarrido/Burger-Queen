@@ -34,6 +34,12 @@ class Chef extends Component {
 					<div className="row">
 						<div className="col-sm">
 							<p> <i class="fas fa-concierge-bell"></i> En Preparación</p>
+							<div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action">Papas fritas</button>
+                <button type="button" class="list-group-item list-group-item-action">Burger Queen</button>
+                <button type="button" class="list-group-item list-group-item-action">Aritos de cebolla</button>
+               
+            </div>
 						</div>
 						<div className="col-sm">
 							<p> <i class="fas fa-hamburger"></i> Listos para servir</p>

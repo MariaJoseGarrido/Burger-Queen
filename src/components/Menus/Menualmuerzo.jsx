@@ -164,6 +164,15 @@ class Menualmuerzo extends Component {
                     </div>
                 </div>
             </div>
+            <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active">
+                    Lista de Pedido:
+            </button>
+                <button type="button" class="list-group-item list-group-item-action">Papas fritas</button>
+                <button type="button" class="list-group-item list-group-item-action">Burger Queen</button>
+                <button type="button" class="list-group-item list-group-item-action">Aritos de cebolla</button>
+               
+            </div>
             </React.Fragment>
         );
     }
