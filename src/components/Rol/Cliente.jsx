@@ -8,7 +8,7 @@ import { db } from '../../ConfigFirebase';
     const [nameCliente, setNameCliente] = useState('');
     const [mesaCliente, setMesaCliente] = useState('');
     const customerInformation = (e) => {
-    const res = db.collection('cliente').add({
+    db.collection('cliente').add({
      nameCliente:nameCliente,
      mesaCliente:mesaCliente,
     })
