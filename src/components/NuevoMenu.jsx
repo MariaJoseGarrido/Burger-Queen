@@ -42,21 +42,21 @@ export default function Menu() {
 							<p> <i class="fas fa-concierge-bell"></i>Pedidos</p>
             <div>
               {selectedItems && selectedItems.map(item => (
-                <div>
+                <div class="delete-section">
                   {item.name} <span>${item.price}</span>
-                  <button onClick ={()=> handleDeleteItem(item.id)}>Borrar</button>
+                  <button class="button-delete" onClick ={()=> handleDeleteItem(item.id)}>x</button>
                 </div>
               ))}
               <div >
                 <hr/>
                 Total{" "}
                 <span>
-                $ {selectedItems.reduce((acc, curr) => acc + curr.price, 0).toFixed(2)}
+                $ {selectedItems.reduce((acc, curr) => acc + curr.price, 0)}
                 </span>
               </div>
             </div>
               {selectedItems.length > 0 && (
-                <button> Enviar a Cocina </button>
+                <button class="to-kitchen"> Enviar a Cocina </button>
               )}
 						</div>
 					</div>

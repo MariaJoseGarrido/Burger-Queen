@@ -21,10 +21,10 @@ import { db } from '../../ConfigFirebase';
       })
     }
     return (
-      <div>
+      <div id="client-info">
         <label className="titleClient">Nombre del Cliente:</label>
         <input placeholder='Nombre Cliente' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
-        <label className="titleClient">Numero del Cliente:</label>
+        <label className="titleClient">Número de mesa:</label>
         <input placeholder='Numero de Mesa' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
         <button className='btnEntrada' onClick= {customerInformation}>Guardar</button>
       </div>

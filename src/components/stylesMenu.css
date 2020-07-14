@@ -1,18 +1,25 @@
 .Container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: auto;
+    height: auto;
+  
+  }
+  
+  #client-info{
+    margin-bottom: 20px;
   }
   
   
 
   .newMenu-Data__type {
-    display: inline-block;
     padding: 8px;
     text-transform: uppercase;
     background-color: whitesmoke;
     border: whitesmoke;
     border-radius: 5px;
     font-family: 'Voltaire', sans-serif;
+    text-align: center;
  
   }
  
@@ -21,27 +28,51 @@
   }
   
   
-
   .newMenu-Data__item {
     display: inline-block;
     margin: 4px;
+    height: 150px;
     width: 140px;
     padding: 8px;
     border-radius: 5px;
     background-color: #fbf5f3;
     font-family: 'Voltaire', sans-serif;
     cursor: pointer;
-
+    text-align: center;
   }
   
   .newMenu-Data__item span {
     display: block;
   }
+
+  .newMenu-Data__item:hover {
+    background-color:lightgrey;
+    opacity:90%;
+  }
   
   .img-menu{
-    width: 200px;
-    border-radius: 10px;
+    width: 120px;
+    border-radius: 5px;
   }
+
+  .to-kitchen{
+    border-radius: 5px;
+    background-color: #4ead00;
+    color: #fbf5f3;
+  }
+
+  .to-kitchen:hover {
+    background-color: #48a004;
+    color: #fbf5f3;
+  }
+
+.button-delete{
+  border-radius: 100%;
+  background-color:#ff0000;
+  color: #fbf5f3;
+}
+
+
 
   /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
