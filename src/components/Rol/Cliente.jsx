@@ -1,40 +1,33 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Cliente.css";
+import 'firebase/auth';
+import { db } from '../../ConfigFirebase';
 
-class cliente extends Component {
-  render() {
+ export const RegisteCliente = () => {
+
+    const [nameCliente, setNameCliente] = useState('');
+    const [mesaCliente, setMesaCliente] = useState('');
+    const customerInformation = (e) => {
+    db.collection('cliente').add({
+     nameCliente:nameCliente,
+     mesaCliente:mesaCliente,
+    })
+      .then(res=>{
+        setNameCliente('')
+        setMesaCliente('')
+      })
+      .catch((error) => {
+        console.error('Error adding document: ', error);
+      })
+    }
     return (
-      <React.Fragment>
-        <div className="cliente">
-          <label className="titleClient">Nombre del Cliente:</label>
-
-          <input
-            onChange={(e) => this.handleChanges(e)}
-            className="inputClient"
-            type="text"
-            name="cliente"
-            value={this.props.client}
-          />
-
-          <p className="titleClient"> Mesa:</p>
-
-          <select onChange={(e) => this.handleChange(e)} className="mesa">
-            <option value="" disabled selected hidden>
-              N°
-            </option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-          </select>
-        </div>
-      </React.Fragment>
+      <div>
+        <label className="titleClient">Nombre del Cliente:</label>
+        <input placeholder='Nombre Cliente' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
+        <label className="titleClient">Numero del Cliente:</label>
+        <input placeholder='Numero de Mesa' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
+        <button className='btnEntrada' onClick= {customerInformation}>Guardar</button>
+      </div>
     );
   }
-}
-
-export default cliente;
+   export default  (RegisteCliente);

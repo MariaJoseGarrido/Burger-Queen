@@ -4,6 +4,7 @@ import Data from "./Data";
 
 
 export default function Menu() {
+  
   const [DataType, setDataType] = useState("desayunos");
   const [selectedItems, setSelectedItems] = useState([]);
   const handleItemClick = item => {
@@ -13,7 +14,10 @@ export default function Menu() {
   };
 
   return (
+
+   
     <div className="Container">
+      
       <div className="Apps-Data">
         {Object.keys(Data).map(item => (
           <button className="newMenu-Data__type" onClick={() => setDataType(item)}>
@@ -28,7 +32,7 @@ export default function Menu() {
           </div>
         ))}
       </div>
-      <div className="container">
+        <div className="container">
 					<div className="row">
 						<div className="col-sm">
 							<p> <i class="fas fa-concierge-bell"></i>Pedidos</p>
@@ -54,5 +58,8 @@ export default function Menu() {
     </div>
   );
 }
+
+
+
 
 
