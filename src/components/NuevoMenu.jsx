@@ -9,9 +9,13 @@ export default function Menu() {
   const [selectedItems, setSelectedItems] = useState([]);
   const handleItemClick = item => {
   //console.log("handleItemClick", handleItemClick);
-
     setSelectedItems([...selectedItems, item]);
   };
+
+  const handleDeleteItem = detetedItems => {
+  const detetedItemsOrden =  selectedItems.filter(({id})=> id !== detetedItems)
+  setSelectedItems(detetedItemsOrden)
+  }
 
   return (
 
@@ -40,9 +44,11 @@ export default function Menu() {
               {selectedItems && selectedItems.map(item => (
                 <div>
                   {item.name} <span>${item.price}</span>
+                  <button onClick ={()=> handleDeleteItem(item.id)}>Borrar</button>
                 </div>
               ))}
               <div >
+                <hr/>
                 Total{" "}
                 <span>
                 $ {selectedItems.reduce((acc, curr) => acc + curr.price, 0).toFixed(2)}
@@ -58,8 +64,6 @@ export default function Menu() {
     </div>
   );
 }
-
-
 
 
 
