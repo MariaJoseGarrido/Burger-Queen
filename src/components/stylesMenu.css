@@ -23,8 +23,9 @@
   
 
   .newMenu-Data__item {
-    display: grid;
+    display: inline-block;
     margin: 4px;
+    width: 140px;
     padding: 8px;
     border-radius: 5px;
     background-color: #fbf5f3;
