@@ -16,3 +16,10 @@ p{
   margin-top: 10px;
   text-decoration: underline black;  
 }
+
+.chefimg{
+  width: 100%;
+  border-radius: 5px;
+  display: inline;
+  margin-bottom: 20px;
+}

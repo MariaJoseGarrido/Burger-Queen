@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import waitress from "../../img/waitress.jpeg";
+import waitress from "../../img/bannerGarzon.png";
 import "../Rol/waiter.css";
 import DateComponent from "../DateComponent";
 import backButton from "../../img/backButton.png";
@@ -38,7 +38,7 @@ class welcomeWaiter extends Component {
         <div className="container-custom">
           <div className="logo">
             <img className="waitress" alt="waitress" src={waitress} />
-            <h1 className="title-custom">¿Qué servicio vas a prestar?</h1>
+            <h1 className="title-custom">Toma de órdenes</h1>
               <Cliente/>
           </div>
         </div>

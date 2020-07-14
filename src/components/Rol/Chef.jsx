@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import backButton from "../../img/backButton.png"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Inicio from "../../components/Inicio"
+import chefimg from "../../img/bannercocina.png";
 import "../Rol/chef.css"
 
 class Chef extends Component {
@@ -29,7 +30,7 @@ class Chef extends Component {
 						className="backButton"
 					/>
 				</Link>
-
+				<img className="chefimg" alt="kitchen" src={chefimg} />
 				<div className="container">
 					<div className="row">
 						<div className="col-sm">

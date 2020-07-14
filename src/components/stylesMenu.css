@@ -57,13 +57,16 @@
 
   .to-kitchen{
     border-radius: 5px;
-    background-color: #4ead00;
-    color: #fbf5f3;
+    background-color: #ffcf4b;
+    font-family: 'Voltaire', sans-serif;
+    padding: 3px 8px 3px 8px;
+    
   }
 
   .to-kitchen:hover {
-    background-color: #48a004;
-    color: #fbf5f3;
+    background-color:696969;
+    
+  
   }
 
 .button-delete{
@@ -72,6 +75,13 @@
   color: #fbf5f3;
 }
 
+.btnEntrada{
+  border-radius: 8px;
+  margin-left: 5px;
+  background-color: #ffcf4b;
+  font-family: 'Voltaire', sans-serif;
+  padding: 5px 10px 5px 10px;
+}
 
 
   /* iPads (portrait) ----------- */

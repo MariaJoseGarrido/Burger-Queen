@@ -1,16 +1,15 @@
 .waitress {
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
     display: inline;
-    margin-left: 170px;
 }
 
 .title-custom{
     display: flex;
-    margin: 0;
+    margin: 20px 0px 20px 0px;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+
 }    
 
 /* iPads (portrait) ----------- */
