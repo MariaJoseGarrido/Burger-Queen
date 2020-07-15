@@ -1,28 +1,65 @@
-import React, { useState } from "react";
-import "./stylesMenu.css";
-import Data from "./Data";
+ import React, { useState } from "react";
+ import "./stylesMenu.css";
+ import Data from "./Data";
+ import { db } from "../ConfigFirebase";
+ import 'firebase/auth';
 
 
 export default function Menu() {
   
   const [DataType, setDataType] = useState("desayunos");
-  const [selectedItems, setSelectedItems] = useState([]);
+  const [selectedItems, setSelectedItems] = useState([]);    
+  const [nameCliente, setNameCliente] = useState('');
+  const [mesaCliente, setMesaCliente] = useState('');
+  const [product, setProduct] = useState('');
+  const [price, setPrice] = useState('');
+console.log(setProduct);
+console.log(setPrice);
+  
   const handleItemClick = item => {
   //console.log("handleItemClick", handleItemClick);
     setSelectedItems([...selectedItems, item]);
+    db.collection('cliente').add({
+      nameCliente:nameCliente,
+      mesaCliente:mesaCliente,
+      product:product,
+      price:price,
+    })
+  };
+  
+   const saveClientOrder = (item = {}) => {
+     db.collection('cliente').add({
+       ...item
+    })
+   };
+
+  const handleSendClientOrder = () => {
+    const order = {
+      DataType,
+      selectedItems,
+      nameCliente,
+      mesaCliente,
+      product,
+      price
+    }
+    saveClientOrder(order)
   };
 
+  console.log("Pedido",handleSendClientOrder);
   const handleDeleteItem = detetedItems => {
   const detetedItemsOrden =  selectedItems.filter(({id})=> id !== detetedItems)
   setSelectedItems(detetedItemsOrden)
   }
-
   return (
 
-   
     <div className="Container">
-      
       <div className="Apps-Data">
+      <div id="client-info">
+        <label className="titleClient">Nombre del Cliente:</label>
+        <input placeholder='Nombre Cliente' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
+        <label className="titleClient">Número de mesa:</label>
+        <input placeholder='Numero de Mesa' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
+      </div>
         {Object.keys(Data).map(item => (
           <button className="newMenu-Data__type" onClick={() => setDataType(item)}>
             {item}
@@ -56,14 +93,16 @@ export default function Menu() {
               </div>
             </div>
               {selectedItems.length > 0 && (
-                <button class="to-kitchen"> Enviar a Cocina </button>
+                <button class="to-kitchen" onClick={handleSendClientOrder}> Enviar a Cocina </button>
+                
               )}
+             
 						</div>
+            
 					</div>
 				</div>
     </div>
   );
 }
-
 
 

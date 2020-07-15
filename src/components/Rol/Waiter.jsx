@@ -7,7 +7,7 @@ import DateComponent from "../DateComponent";
 import backButton from "../../img/backButton.png";
 import Inicio from "../Inicio";
 import Menu from "../../components/NuevoMenu";
-import Cliente from "./Cliente"
+
 
 class welcomeWaiter extends Component {
   backButton = () => {
@@ -39,7 +39,7 @@ class welcomeWaiter extends Component {
           <div className="logo">
             <img className="waitress" alt="waitress" src={waitress} />
             <h1 className="title-custom">Toma de órdenes</h1>
-              <Cliente/>
+              
           </div>
         </div>
 
