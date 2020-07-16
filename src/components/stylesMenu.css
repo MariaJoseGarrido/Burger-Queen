@@ -13,13 +13,14 @@
   
 
   .newMenu-Data__type {
-    padding: 8px;
+    padding: 5px 18px 5px 18px;
     text-transform: uppercase;
     background-color: whitesmoke;
     border: whitesmoke;
     border-radius: 5px;
     font-family: 'Voltaire', sans-serif;
     text-align: center;
+    font-size: 18px;
  
   }
  
@@ -71,8 +72,9 @@
 
 .button-delete{
   border-radius: 100%;
-  background-color:#ff0000;
+  background-color:#860606;
   color: #fbf5f3;
+  font-size: 13px;
 }
 
 .btnEntrada{
@@ -83,7 +85,10 @@
   padding: 5px 10px 5px 10px;
 }
 
-
+.titleClient{
+  display:flex;
+  flex-direction: column;
+}
   /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .date{

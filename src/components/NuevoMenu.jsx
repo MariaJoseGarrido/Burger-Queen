@@ -52,9 +52,9 @@ export default function Menu() {
       <div className="Apps-Data">
         <div id="client-info">
           <label className="titleClient">Nombre del Cliente:</label>
-          <input placeholder='Nombre Cliente' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
+          <input placeholder='Ej: Anliana Aguilar' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
           <label className="titleClient">Número de mesa:</label>
-          <input placeholder='Numero de Mesa' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
+          <input placeholder='Ej: 8' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
         </div>
         {Object.keys(Data).map(item => (
           <button className="newMenu-Data__type" onClick={() => setDataType(item)}>

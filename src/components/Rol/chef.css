@@ -23,3 +23,9 @@ p{
   display: inline;
   margin-bottom: 20px;
 }
+
+.client-info{
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+}

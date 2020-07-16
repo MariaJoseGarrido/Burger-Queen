@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { db } from "../../ConfigFirebase"
 import backButton from "../../img/backButton.png"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Inicio from "../../components/Inicio"
 import chefimg from "../../img/bannercocina.png";
 import "../Rol/chef.css"
+
 
 class Chef extends Component {
 
@@ -16,12 +18,31 @@ class Chef extends Component {
 		  </Route>
 		</Router>
 		);
-	   
 	  };
+		state = {
+		order: [],
+		};
+	
+	  componentDidMount() {
+			db.collection('cliente').onSnapshot((snapShots) => {
+    		this.setState({
+					order: snapShots.docs.map((doc) => {
+						return {
+							id: doc.id,
+							data: doc.data().selectedItems,
+							nameCliente: doc.data().nameCliente,
+							mesaCliente: doc.data().mesaCliente,
+						};
+					}),
+				});
+      		})
+		}
 
-	render() {
+	 render() {
+		const { order } = this.state;
+		//console.log( "order", order );
 		return (
-			<div className="ChefDiv">
+			<div className="ChefDiv">			
 				<Link to="/">
 					<img
 						onClick={() => this.backButton()}
@@ -30,28 +51,37 @@ class Chef extends Component {
 						className="backButton"
 					/>
 				</Link>
+
 				<img className="chefimg" alt="kitchen" src={chefimg} />
 				<div className="container">
 					<div className="row">
 						<div className="col-sm">
 							<p> <i class="fas fa-concierge-bell"></i> En Preparación</p>
-							<div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action">Papas fritas</button>
-                <button type="button" class="list-group-item list-group-item-action">Burger Queen</button>
-                <button type="button" class="list-group-item list-group-item-action">Aritos de cebolla</button>
-               
-            </div>
+							<div class="list-group">	
+        						{order.map((item) => (
+          							<div><hr/>
+            							<p className="client-info">Cliente : {item.nameCliente}</p>
+           								<p className="client-info">Mesa : {item.mesaCliente}</p>
+            							{item.data.map((selectedItems) => {
+              								return (
+                								<div>
+                  									<p className="client-info">{selectedItems.name}</p>
+                  								</div >
+              								);
+           								})}
+           							</div>
+        						))}                				
+              </div>
 						</div>
+
 						<div className="col-sm">
 							<p> <i class="fas fa-hamburger"></i> Listos para servir</p>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		);
 	}
 }
-
 
 export default Chef;
