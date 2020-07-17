@@ -1,103 +1,107 @@
 .Container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: auto;
-    height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: auto;
+  height: auto;
+
+}
+
+#client-info{
+  margin-bottom: 20px;
+}
+
+.card-menu{
+  min-height: 170px;
+  background-color: #fbf5f3;
+  border-radius: 5px;
+  width: 140px;
+
+}
+
+.newMenu-Data__type {
+  padding: 5px 18px 5px 18px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  border: whitesmoke;
+  border-radius: 5px;
+  font-family: 'Voltaire', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  transition: .3s;
+  border: solid 1px whitesmoke;
+
+}
+
+.newMenu-Data__type:hover {
+  background-color:black;
   
-  }
+}
+
+
+.newMenu-Data__item {
+  display: inline-block;
+  font-family: 'Voltaire', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.newMenu-Data__item span {
+  display: block;
+}
+
+.card-menu:hover {
+  background-color:lightgrey;
+  opacity:90%;
+  transform: scale(1.1);
+}
+
+.img-menu{
+  width: 120px;
+  border-radius: 5px;
+}
+
+.to-kitchen{
+  border-radius: 5px;
+  background-color: #ffcf4b;
+  font-family: 'Voltaire', sans-serif;
+  padding: 3px 8px 3px 8px;
   
-  #client-info{
-    margin-bottom: 20px;
-  }
-  
+}
+
+.to-kitchen:hover {
+  background-color:696969;
   
 
-  .newMenu-Data__type {
-    padding: 5px 18px 5px 18px;
-    text-transform: uppercase;
-    background-color: whitesmoke;
-    border: whitesmoke;
-    border-radius: 5px;
-    font-family: 'Voltaire', sans-serif;
-    text-align: center;
-    font-size: 18px;
- 
-  }
- 
-  .newMenu-Data__type:hover {
-    background-color:black;
-  }
-  
-  
-  .newMenu-Data__item {
-    display: inline-block;
-    margin: 4px;
-    height: 150px;
-    width: 140px;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #fbf5f3;
-    font-family: 'Voltaire', sans-serif;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .newMenu-Data__item span {
-    display: block;
-  }
-
-  .newMenu-Data__item:hover {
-    background-color:lightgrey;
-    opacity:90%;
-  }
-  
-  .img-menu{
-    width: 120px;
-    border-radius: 5px;
-  }
-
-  .to-kitchen{
-    border-radius: 5px;
-    background-color: #ffcf4b;
-    font-family: 'Voltaire', sans-serif;
-    padding: 3px 8px 3px 8px;
-    
-  }
-
-  .to-kitchen:hover {
-    background-color:696969;
-    
-  
-  }
+}
 
 .button-delete{
-  border-radius: 100%;
-  background-color:#860606;
-  color: #fbf5f3;
-  font-size: 13px;
+border-radius: 100%;
+background-color:#860606;
+color: #fbf5f3;
+font-size: 13px;
 }
 
 .btnEntrada{
-  border-radius: 8px;
-  margin-left: 5px;
-  background-color: #ffcf4b;
-  font-family: 'Voltaire', sans-serif;
-  padding: 5px 10px 5px 10px;
+border-radius: 8px;
+margin-left: 5px;
+background-color: #ffcf4b;
+font-family: 'Voltaire', sans-serif;
+padding: 5px 10px 5px 10px;
 }
 
 .titleClient{
-  display:flex;
-  flex-direction: column;
+display:flex;
+flex-direction: column;
 }
-  /* iPads (portrait) ----------- */
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .date{
-      font-size: 22px;
-      display: flex;
-      justify-content: flex-end;
-  }
-  
+.date{
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
 
-   
-   
+
+ 
+ 
 }

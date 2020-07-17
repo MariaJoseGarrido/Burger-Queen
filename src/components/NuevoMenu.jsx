@@ -57,17 +57,21 @@ export default function Menu() {
           <input placeholder='Ej: 8' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
         </div>
         {Object.keys(Data).map(item => (
-          <button className="newMenu-Data__type" onClick={() => setDataType(item)}>
+          <button className="newMenu-Data__type m2" onClick={() => setDataType(item)}>
             {item}
           </button>
         ))}
         <br/>
         <br/>
-        {Data[DataType].map(item => (
-          <div className="newMenu-Data__item" onClick={() => handleItemClick(item)}>
-            {item.name} <span>${item.price}</span> <img className="img-menu" alt="" src ={item.img} />
-          </div>
-        ))}
+        <div className="row">
+          {Data[DataType].map(item => (
+            <div className="card-menu m-1 d-flex align-items-center justify-content-center">
+              <div className="newMenu-Data__item" onClick={() => handleItemClick(item)}>
+                {item.name} <span>${item.price}</span> <img className="img-menu" alt="" src ={item.img} />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
         <div className="container">
 					<div className="row">
