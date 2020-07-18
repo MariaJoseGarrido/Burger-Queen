@@ -24,7 +24,8 @@ class Chef extends Component {
 		};
 	
 	  componentDidMount() {
-			db.collection('cliente').onSnapshot((snapShots) => {
+			db.collection('cliente').orderBy('date','asc')
+			.onSnapshot((snapShots) => {
     		this.setState({
 					order: snapShots.docs.map((doc) => {
 						return {
