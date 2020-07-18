@@ -39,6 +39,7 @@ export default function Menu() {
       selectedItems,
       nameCliente,
       mesaCliente,
+      estado: 'PREPARANDO'
     }
     saveClientOrder(order)
   };
