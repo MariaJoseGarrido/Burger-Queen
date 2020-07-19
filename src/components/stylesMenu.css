@@ -75,10 +75,8 @@
 }
 
 .button-delete{
-border-radius: 100%;
-background-color:#860606;
-color: #fbf5f3;
-font-size: 13px;
+  font-size: 18px !important;
+  cursor: pointer;
 }
 
 .btnEntrada{

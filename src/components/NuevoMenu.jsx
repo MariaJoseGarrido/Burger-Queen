@@ -79,9 +79,9 @@ export default function Menu() {
 							<p> <i class="fas fa-concierge-bell"></i>Pedidos</p>
               <div>
                 {selectedItems && selectedItems.map(item => (
-                  <div class="delete-section">
+                  <div class="delete-section ">
                     {item.name} <span>${item.price}</span>
-                    <button class="button-delete" onClick ={()=> handleDeleteItem(item.id)}>x</button>
+                    <i class="fas fa-times-circle text-danger button-delete ml-1" onClick ={()=> handleDeleteItem(item.id)}></i>
                   </div>
                 ))}
                 <div><hr/>
