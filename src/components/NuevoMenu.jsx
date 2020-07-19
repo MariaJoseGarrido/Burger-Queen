@@ -25,7 +25,9 @@ export default function Menu() {
 
   const saveClientOrder = (item = {}) => {
     db.collection('cliente').doc().set({
-      ...item
+      ...item,
+      date:new Date(),
+      status:'Pendiente'
     })
     limpiar()
     alert("El pedido de " + nameCliente + " se envio a cocina");
@@ -37,6 +39,7 @@ export default function Menu() {
       selectedItems,
       nameCliente,
       mesaCliente,
+      estado: 'PREPARANDO'
     }
     saveClientOrder(order)
   };
@@ -52,7 +55,7 @@ export default function Menu() {
       <div className="Apps-Data">
         <div id="client-info">
           <label className="titleClient">Nombre del Cliente:</label>
-          <input placeholder='Ej: Anliana Aguilar' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
+          <input placeholder='Ej: Nombre y Apellido' type='text'value ={nameCliente} onChange={(ev)=> setNameCliente(ev.target.value)}></input>
           <label className="titleClient">Número de mesa:</label>
           <input placeholder='Ej: 8' type='text' value ={mesaCliente} onChange={(ev)=> setMesaCliente(ev.target.value)}></input>
         </div>
