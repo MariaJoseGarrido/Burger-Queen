@@ -30,10 +30,10 @@ export default function Menu() {
       status:'Pendiente'
     })
     limpiar()
-    alert("El pedido de " + nameCliente + " se envio a cocina");
+    alert("El pedido de " + nameCliente + " se envío a cocina");
   };
 
-  const handleSendClientOrder = () => {
+  const handleSendClientOrder = () => { //condicion actual del pedido, se guarda en fb
     const order = {
       DataType,
       selectedItems,
@@ -45,7 +45,7 @@ export default function Menu() {
   };
 
   //console.log("Pedido",handleSendClientOrder);
-  const handleDeleteItem = detetedItems => {
+  const handleDeleteItem = detetedItems => { //funcion para eliminar productos
     const detetedItemsOrden =  selectedItems.filter(({id})=> id !== detetedItems)
     setSelectedItems(detetedItemsOrden)
   }

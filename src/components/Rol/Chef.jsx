@@ -17,19 +17,19 @@ class Chef extends Component {
       </Router>
     );
   };
-  state = {
+  state = { //no funciona
     order: [],
     orderReady: [],
   };
 
-  resetState() {
+  resetState() { //no funciona
     this.setState({
       order: [],
       orderReady: [],
     });
   }
 
-  editCooked = () => {
+  editCooked = () => { //estado del pedido, tiene que cambiar en listo, no se ve
     const postRef = db.collection("cliente").doc();
     console.log("Está editando");
     postRef
@@ -62,7 +62,7 @@ class Chef extends Component {
           }),
         });
       });
-    db.collection("cliente")
+    db.collection("cliente") //no se muestra, funcionando en fb
       .where("estado", "==", "LISTO")
       .onSnapshot((snapShots) => {
         this.setState({
@@ -80,8 +80,8 @@ class Chef extends Component {
   }
 
   render() {
-    const { order } = this.state;
-    const { orderReady } = this.state;
+    const { order } = this.state;//va a cambiar con el tiempo //de mesero a chef
+    const { orderReady } = this.state; //de cocina a listo
     //console.log( "order", order );
     return (
       <div className="ChefDiv">
