@@ -71,6 +71,12 @@ button:hover {
     
     }
 
+    button:hover {
+        background:dimgrey;
+        color:white;
+        transform: scale(1.1);
+    }
+
     .burgerHome { 
         height: 400px;
          margin-left: 10%;

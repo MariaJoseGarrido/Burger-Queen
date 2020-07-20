@@ -52,7 +52,9 @@
 .card-menu:hover {
   background-color:lightgrey;
   opacity:90%;
+  border:black;
   transform: scale(1.1);
+  transition: .3s;
 }
 
 .img-menu{
