@@ -1,4 +1,5 @@
 ![burgerlogo](./src/img/burgerlogo.png)
+![slogan](./src/img/slogan.png)
 
 # Burger Queen 🍔
 
@@ -48,6 +49,8 @@ Para poder organizarnos de mejor manera con el equipo usamos Trello
 
 # Futuras Mejoras 
 - Se colocará un timer para tomar en cuenta el tiempo desde que se toma la orden hasta que la comida llega el cliente.
+- Mostraremos el menú listo para servir.
+- Se trabajará en una versión offLine del producto.
 
 # DEPLOY 🚀
 
