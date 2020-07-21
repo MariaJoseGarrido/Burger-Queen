@@ -41,6 +41,10 @@ Para nuestra aplicación tomamos la siguiente paleta de colores
 
 ## Prototipo alta fidelidad 
 
+![figma1](./src/img/figma1.png)
+![figma2](./src/img/figma2.png)
+![figma3](./src/img/figma3.png)
+![figma4](./src/img/figma4.png)
 
 # Planificación 📋
 Para poder organizarnos de mejor manera con el equipo usamos Trello
